@@ -75,3 +75,27 @@ Financial Companies - localhost:8082
 
 Admin - localhost:8083
 - `/investments/:id` get an investment record by id
+- `/report` generate csv report for investments
+
+
+# My notes
+## Getting started
+You need node.js 14 or higher to run the application
+
+## Questions
+    1. How might you make this service more secure?
+       1. I believe we need at least some authentification for users to be able to use this service
+       2. Or we can have all microservices in one secure environment and all services should be accessed through some secured auth service
+    2. How would you make this solution scale to millions of records?
+       1. Mentioned that in code so we need to create some stream based solution to be able to process millions of records in report
+    3. What else would you have liked to improve given more time?
+       1. Errors handling
+       2. Communication beetween services
+       3. Fix npm vulnerabilities
+       4. Adding unit tests
+       5. Add caching 
+
+## Other notes
+Unfortunately I did not have enough time for unit tests.
+
+Also it is my first time using ramda but I really liked it.
