@@ -4,8 +4,6 @@ const investmetService = require('./investmentService');
 const financialService = require('./financialService');
 const memoize = require('../helpers/memoize');
 
-
-
 // We can have this as [{ key: header }, ...] but it is more convinient to use it separately here
 const csvHeaders = ['User', 'First Name', 'Last Name', 'Date', 'Holding', 'Value'];
 const csvKeys = ['userId', 'firstName', 'lastName', 'date', 'holdings', 'value'];
